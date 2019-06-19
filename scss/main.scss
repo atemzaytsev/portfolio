@@ -1,4 +1,6 @@
 @import 'config';
+@import 'menu';
+
 
 * {
     box-sizing: border-box;
@@ -61,7 +63,7 @@ main {
 
             &:hover {
                 color: $secondary-color;
-                @include easout();
+                @include easeOut();
 
             }
         }
