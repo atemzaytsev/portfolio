@@ -3,6 +3,7 @@
 
 
 
+
 * {
     box-sizing: border-box;
 }
@@ -72,6 +73,7 @@ main {
             }
         }
     }
+   
 
     &#home {
         overflow: hidden; //hide scroll
@@ -126,6 +128,7 @@ main {
         border-bottom: $secondary-color 5px solid;
         animation: moveFromBottom 0.6s both;
         @include easeOut;
+        
     }
 }
 
@@ -280,81 +283,81 @@ main {
 ////  }
 ////}
 ////
-.contact {
-    width: 100%;
-    height: 520px;
-     display: flex;
-        flex-flow: column wrap;
-//        justify-content:space-between;
-//         align-items: center;
-//    align-content: space-between;
-        float: left;
-
-    &-left,
-    &-right {
-       
-        height: auto;
-        overflow: hidden;
-
-    }
-
-    &-left {
-        margin: 0;
-        padding: 0;
-
-        height: 100%;
-        width: 30%;
-
-    }
-
-    &-right {
-        margin: 0;
-        padding: 0;
-
-        width: 65%;
-        height: 100%;
-
-        #map {
-            border: #fff 3px solid;
-            width: 100%;
-            height:100%;
-        }
-
-
-    }
-
-
-}
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem;
-
-
-  div {
-      
-    font-size: 2rem;
-    border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    animation: moveFromLeft 0.5s both;
-    @include easeOut;  
-
-    &:hover {
-      padding: 0.5rem 1.5rem;
-      background: $secondary-color;
-      color: set-text-color($secondary-color);
-      @include easeOut;
-      span {
-        
-        color: #fff;
-         
-      }
-    }
-  }
-}
+//.contact {
+//    width: 100%;
+//    
+//     display: grid;
+//        
+////        justify-content:space-between;
+////         align-items: center;
+////    align-content: space-between;
+//       
+//
+//    &-left,
+//    &-right {
+//       
+//        height: auto;
+//        overflow: hidden;
+//
+//    }
+//
+//    &-left {
+//        margin: 0;
+//        padding: 0;
+//
+//        height: 100%;
+//        width: 30%;
+//
+//    }
+//
+//    &-right {
+//        margin: 0;
+//        padding: 0;
+//
+//        width: 65%;
+//        height: 100%;
+//
+//        #map {
+//            border: #fff 3px solid;
+//            width: 100%;
+//            height:100%;
+//        }
+//
+//
+//    }
+//
+//
+//}
+//.boxes {
+//  display: flex;
+//  flex-wrap: wrap;
+//  justify-content: space-evenly;
+//  align-items: center;
+//  margin-top: 1rem;
+//
+//
+//  div {
+//      
+//    font-size: 2rem;
+//    border: 3px #fff solid;
+//    padding: 1.5rem 2.5rem;
+//    margin-bottom: 3rem;
+//    animation: moveFromLeft 0.5s both;
+//    @include easeOut;  
+//
+//    &:hover {
+//      padding: 0.5rem 1.5rem;
+//      background: $secondary-color;
+//      color: set-text-color($secondary-color);
+//      @include easeOut;
+//      span {
+//        
+//        color: #fff;
+//         
+//      }
+//    }
+//  }
+//}
 #main-footer {
     text-align: center;
     padding: 1rem;
@@ -364,3 +367,4 @@ main {
 }
 
 @import 'mobile';
+@import 'contact';

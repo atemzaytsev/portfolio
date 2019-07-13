@@ -16,6 +16,10 @@ $background-opacity: 0.9;
 
         transform: translateX(-400px);
     }
+    
+    70% {
+        transform: translateX(50px);
+    }
 
     100%{
         transform: translateX(0);
